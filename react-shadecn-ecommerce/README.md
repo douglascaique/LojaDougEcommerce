@@ -1,30 +1,49 @@
-# React + TypeScript + Vite
+# Aplicação de E-Commerce com React e Consumindo a FakeStore API 
+### React + TypeScript + Vite
+## Descrição 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Neste exercício, você será desafiado a criar uma aplicação de e-commerce utilizando 
+React e consumindo a FakeStore API (https://fakestoreapi.com). 
+A FakeStore API fornece endpoints simulando uma loja online, com dados fictícios de produtos, categorias e usuários. 
 
-Currently, two official plugins are available:
+## Requisitos obrigatórios 
+### Componente de Listagem de Produtos 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+• Crie um componente chamado ProductList para exibir uma lista de produtos disponíveis na FakeStore API. 
+• Consuma o endpoint da API para recuperar os dados dos produtos. 
+• Exiba os produtos em cartões, mostrando pelo menos o nome, preço e imagem de cada produto.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Detalhes do Produto 
+• Crie um componente ProductDetails para exibir os detalhes de um produto específico. 
+• Ao clicar em um produto na lista, exiba os detalhes completos desse produto, incluindo descrição, preço, imagem, etc. 
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Requisitos opcionais 
+### Navegação por Categoria 
+• Implemente uma navegação por categoria de produtos. 
+• Consuma o endpoint da API para recuperar as categorias disponíveis. 
+• Permita que o usuário selecione uma categoria e filtre os produtos de acordo. 
+
+### Carrinho de Compras 
+• Implemente um carrinho de compras onde os usuários possam adicionar produtos. 
+• Exiba a quantidade de itens no carrinho e o total acumulado. 
+• Permita que o usuário adicione ou remova produtos do carrinho. 
+
+### Finalização da Compra: 
+• Implemente uma tela de finalização de compra onde os usuários possam revisar os produtos selecionados e preencher informações de entrega. 
+• Simule o processo de checkout sem a necessidade de integração com um sistema de pagamento real. 
+
+### Estilização e Layout 
+• Adicione estilos e layout responsivo para tornar a aplicação visualmente 
+atraente e funcional em dispositivos móveis e desktops. 
+
+
+## Dica 
+Comece definindo a estrutura da aplicação e identificando os componentes necessários. Em seguida, implemente a lógica de busca e exibição de produtos, adição ao carrinho, etc. Por fim, estilize a aplicação para uma melhor experiência do usuário. 
+
+### Observações 
+• Mantenha o código limpo, organizado e com comentários explicativos. 
+• Teste a aplicação para garantir seu correto funcionamento e a aderência aos requisitos. 
+• Consulte a documentação da FakeStore API para obter informações sobre os endpoints disponíveis e a estrutura dos dados retornados.
